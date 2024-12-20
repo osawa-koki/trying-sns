@@ -56,7 +56,7 @@ Error: The request signature we calculated does not match the signature you prov
 
 このエラーは、AWSのアクセスキーIDとシークレットアクセスキーに特殊文字が含まれていることが原因です。  
 
-```log
+```text
 Possible cause: Your operating system is mishandling AWS keys that contain certain special characters
   If your AWS keys include certain special characters, such as -, +, /, or %, some operating system variants process the string improperly and cause the key string to be interpreted incorrectly.
 
