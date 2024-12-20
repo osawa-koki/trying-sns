@@ -16,6 +16,18 @@ cdk synth
 cdk deploy --require-approval never --all
 ```
 
+リソースのプロビジョニング後に、サブスクリプションの確認を行う必要があります。  
+`.env`ファイルで指定した、`SNS_SUBSCRIPTION_URL (SubscribeURLプロパティ)`と`SNS_SUBSCRIPTION_EMAIL (Confirm subscriptionリンク)`にそれぞれ確認用のリンクが設定されています。  
+リンクを開くと、サブスクリプションの確認が完了します。  
+
+確認が完了したら、`publish.sh`を実行してメッセージを送信します。  
+
+```shell
+./publish.sh
+```
+
+EメールとHTTPエンドポイントにメッセージが送信されます。  
+
 ---
 
 GitHub Actionsでデプロイするためには、以下のシークレットを設定してください。  
