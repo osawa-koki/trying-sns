@@ -2,6 +2,8 @@
 
 🏸🏸🏸 Amazon SNSを使ってみる！  
 
+![成果物動画](./fruit.gif)  
+
 ## 実行方法
 
 `.env.example`をコピーして`.env`ファイルを作成します。  
