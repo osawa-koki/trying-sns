@@ -26,6 +26,8 @@ jobs:
         run: yarn install --frozen-lockfile --non-interactive
       - name: Install CDK
         run: npm install --global aws-cdk
+      - name: Create .env file
+        run: cp .env.example .env
       - name: Lint
         run: npm run lint
       - name: Type check
