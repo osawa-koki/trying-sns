@@ -59,9 +59,7 @@ Error: The request signature we calculated does not match the signature you prov
 ```text
 Possible cause: Your operating system is mishandling AWS keys that contain certain special characters
   If your AWS keys include certain special characters, such as -, +, /, or %, some operating system variants process the string improperly and cause the key string to be interpreted incorrectly.
-
   If you process your keys using other tools or scripts, such as tools that build the credentials file on a new instance as part of its creation, those tools and scripts might have their own handling of special characters that causes them to be transformed into something that AWS no longer recognizes.
-
   We suggest regenerating the secret key to get one that does not include the special character causing issues.
 ```
 Ref: <https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-troubleshooting.html#tshoot-signature-does-not-match>  
